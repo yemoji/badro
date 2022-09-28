@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Grid } from '@mui/material';
+import HeaderHome from '@src/components/pages/home/Header';
 import type { NextPage } from 'next';
-import HeaderHome from '../src/components/pages/home/Header';
 
 const Home: NextPage = () => {
   return (
