@@ -18,7 +18,7 @@ export default function Navbar() {
         <Image src="/logofa.svg" alt="logo" width={107} height={48} />
       </Grid>
       <Grid flexDirection="row-reverse" flexGrow={2} justifyContent="space-evenly" display="flex" alignItems="center">
-        <NextLink passHref href="/">
+        <NextLink passHref href="/about-us">
           <Link>درباره ما</Link>
         </NextLink>
         <NextLink passHref href="/">
@@ -32,7 +32,10 @@ export default function Navbar() {
         </NextLink>
       </Grid>
       <Grid display="flex" alignItems="center">
-        <Button sx={{ fontSize: "18px" }} variant="text">ورود</Button>
+        <NextLink passHref href="/login">
+          <Button sx={{ fontSize: "18px" }} variant="text">ورود</Button>
+        </NextLink>
+        <NextLink passHref href="/register">
         <Button
           variant="contained"
           sx={{ color: "#fff", fontSize: "18px" }}
@@ -40,6 +43,7 @@ export default function Navbar() {
         >
           ثبت نام
         </Button>
+        </NextLink>
       </Grid>
     </Grid>
   );
