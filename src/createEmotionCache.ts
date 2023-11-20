@@ -1,5 +1,6 @@
 import createCache from '@emotion/cache';
-
+import rtlPlugin from 'stylis-plugin-rtl';
+import { prefixer } from 'stylis';
 const isBrowser = typeof document !== 'undefined';
 
 // On the client side, Create a meta tag at the top of the <head> and set it as insertionPoint.
@@ -15,5 +16,7 @@ export default function createEmotionCache() {
     insertionPoint = emotionInsertionPoint ?? undefined;
   }
 
-  return createCache({ key: 'mui-style', insertionPoint });
+  return createCache({ 
+    key: 'muirtl',
+    stylisPlugins: [prefixer, rtlPlugin], insertionPoint });
 }

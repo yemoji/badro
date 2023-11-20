@@ -1,9 +1,14 @@
 import styled from "@emotion/styled";
-import { TextField as MuiTextField } from "@mui/material";
+import { Grid, TextField as MuiTextField, Typography } from "@mui/material";
 
 export default function Sender() {
   return(
-    <TextField label="sss" />
+    <Grid rowGap={2} sx={{ background: "#ECF8FE", borderRadius: "59px", p: 4 }}  container flexDirection="column" >
+      <Typography sx={{ fontSize: {xs: "18px", md: "22px"}, fontWeight: "bold" }}>آدرس فرستنده</Typography>
+      <Grid container>
+        <TextField label="نام" />
+      </Grid>
+    </Grid>
   )
 }
 

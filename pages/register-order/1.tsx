@@ -13,9 +13,9 @@ export default function RegisterOrder() {
     <Grid container alignItems="center" flexDirection="column">
       <Navbar />
       <Box sx={{ width: "50%", minWidth: "fit-content" }}>
-        <Stepper nonLinear activeStep={0}>
+        <Stepper activeStep={0}>
           {steps.map((label, index) => (
-            <Step key={label} completed={completed[index]}>
+            <Step sx={{ ".MuiStepLabel-labelContainer": {mr: 1} }} key={label} completed={completed[index]}>
               <StepButton color="inherit">
                 {label}
               </StepButton>
