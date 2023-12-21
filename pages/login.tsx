@@ -6,7 +6,7 @@ import NextLink from "next/link";
 
 export default function Login() {
   return (
-    <Grid alignItems="center" justifyContent="space-evenly" sx={{ background: "url('/login/bg.png')", backgroundSize: "cover", minHeight: "100vh", py: "5%" }} container>
+    <Grid alignItems="center" justifyContent="space-evenly" sx={{ background: "url('/login/bg.png')", backgroundSize: "cover", minHeight: "100vh", py: "5%", direction: "ltr" }} container>
       <Form sx={{ minHeight: {xs: "70vh", md: "none"}, justifyContent: { xs: "space-between", md: "none" } }} alignItems="center" py={2} px={4} container flexDirection="column" item xs={10} md={7} lg={5}>
         <Grid>
           <Image src="/logofa.svg" alt="logo" width={107} height={48} />

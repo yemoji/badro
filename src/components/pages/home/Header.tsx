@@ -5,13 +5,13 @@ import Navbar from "../../commons/navbar/navbar"
 
 export default function HeaderHome () {
   return(
-    <Container alignItems="center" container flexDirection="column" pb={4}>
+    <Container sx={{ direction: "ltr" }} alignItems="center" container flexDirection="column" pb={4}>
       <Navbar />
       <Title mt="5vh">
         با <Image src="/logofa.svg" alt="بادرو" height={48} width={107} /> برای انتخاب شرکت پستی دستت بازه!
       </Title>
       <TitleSec sx={{ color: "primary.main" }}>انتخاب . . . ترین شرکت پستی با بادرو
-      <Grid position="absolute" sx={{ top: "22px", right: "56px"}}>
+      <Grid position="absolute" sx={{ top: "22px", left: "56px"}}>
         <Image src="/home/sarei.png" width={201} height={85} alt="سریع ارزان محبوب" />
       </Grid>
       </TitleSec>
@@ -30,7 +30,7 @@ export default function HeaderHome () {
           <PeygiriContainer px={4} py={2} container item xs={12} md={6} flexDirection="column">
             <Typography mb={2} mt={1} variant="h1" fontSize={20} >پیگیری سفارش</Typography>
             <Typography variant="h1" color="secondary.main" fontSize={16}>از طریق بادررو می تونی تمامی مرسولات خودتو پیگیری کنی</Typography>
-            <Grid flexWrap="wrap" container alignItems="center" mt={1} justifyContent="flex-end">
+            <Grid flexWrap="wrap" container alignItems="center" mt={1} justifyContent="space-between">
               <Grid display="flex" alignItems="center" ml={1} position="relative" height={77} maxWidth={300} flexGrow={2}>
                 <Input placeholder="کد پیگیری مرسوله را وارد کنید" />
               </Grid>
@@ -52,9 +52,9 @@ const Input = styled.input`
   outline: none;
   font-size: 16px;
   padding: 8px;
-  ::placeholder {
+  /* ::placeholder {
     color: #000;
-  }
+  } */
 
 `
 

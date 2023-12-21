@@ -21,7 +21,7 @@ const Input = styled.input`
 const Label = styled.label`
   position: absolute;
   top: -15px;
-  right: 16px;
+  left: 16px;
   color: #000;
   font-size: 22px;
   @media(max-width: 900px) {
