@@ -2,9 +2,9 @@ import styled from "@emotion/styled";
 import { Alert, Grid, TextField as MuiTextField, Typography } from "@mui/material";
 import Image from "next/image";
 
-export default function Sender() {
+export default function Reciever() {
   return(
-    <Grid rowGap={2} sx={{ background: "#ECF8FE", borderRadius: "59px", p: 4, direction: "ltr" }}  container flexDirection="column" >
+    <Grid rowGap={2} sx={{ background: "#FFF0E5", borderRadius: "59px", p: 4, direction: "ltr" }}  container flexDirection="column" >
       <Typography sx={{ fontSize: {xs: "18px", md: "22px"}, fontWeight: "bold" }}>آدرس فرستنده</Typography>
       <Grid columnGap={2} rowGap={2} flexWrap="nowrap" justifyContent="space-between" container>
         <TextField sx={{ width: { md: "48%", xs: "95%" } }} label="نام" />
@@ -36,10 +36,10 @@ export default function Sender() {
 
 const TextField = styled(MuiTextField)({
   '& label.Mui-focused': {
-    color: '#0576c6',
+    color: '#FE8B3B',
   },
   '& .MuiInput-underline:after': {
-    borderBottomColor: '#0576c6',
+    borderBottomColor: '#FE8B3B',
   },
   '& .MuiOutlinedInput-root': {
     background: "#fff",
@@ -48,10 +48,10 @@ const TextField = styled(MuiTextField)({
       borderColor: 'transparent',
     },
     '&:hover fieldset': {
-      borderColor: '#0576c6',
+      borderColor: '#FE8B3B',
     },
     '&.Mui-focused fieldset': {
-      borderColor: '#0576c6',
+      borderColor: '#FE8B3B',
     },
   },
 });
